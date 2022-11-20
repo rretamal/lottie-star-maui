@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="Lottie.Demo.StarRating">
+    <VerticalStackLayout BackgroundColor="Transparent">
+        <Frame CornerRadius="20" BackgroundColor="White">
+             <Grid  HorizontalOptions="CenterAndExpand" WidthRequest="300">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <skia:SKLottieView
+                        Grid.Column="0"
+                        x:Name="star1"
+                        Source="star.json"
+                        RepeatCount="0"
+                        HeightRequest="100"
+                        WidthRequest="100"
+                        Margin="0,30,0,0"
+                        IsAnimationEnabled="False"/>
+                    <skia:SKLottieView
+                        Grid.Column="1"
+                        x:Name="star2"
+                        Source="star.json"
+                        RepeatCount="0"
+                        HeightRequest="100"
+                        WidthRequest="100"
+                        IsAnimationEnabled="False"/>
+                    <skia:SKLottieView
+                        Grid.Column="2"
+                        x:Name="star3"
+                        Source="star.json"
+                        RepeatCount="0"
+                        HeightRequest="100"
+                        WidthRequest="100"
+                        Margin="0,30,0,0"
+                        IsAnimationEnabled="False"/>
+                </Grid>
+            </Frame>
+    </VerticalStackLayout>
+</toolkit:Popup>
+
